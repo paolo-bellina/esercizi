@@ -23,7 +23,12 @@ body > * {
 
 /* Struttura a scheda per contenere gli elementi */
 body {
-    background: linear-gradient(135deg, #eef2f3 0%, #8e9eab 100%);
+    background: radial-gradient(
+        ellipse at center,
+        
+        #1f1f1f 50%,
+        #080808 100%
+    );;
 }
 
 /* Per dare un aspetto da "card" elegante creiamo un contenitore virtuale.
@@ -37,7 +42,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 4px;
     text-align: center;
-    color: #1a1a1a;
+    color: #ff0000;
     margin-bottom: 2rem;
     position: relative;
 }
@@ -55,7 +60,7 @@ h1::after {
 /* L'immagine (il quadro) */
 img {
     display: block;
-    width: 80% !important; /* Sovrascriviamo il width 30% inline per renderlo più visibile e d'impatto */
+    width: 190% !important; /* Sovrascriviamo il width 30% inline per renderlo più visibile e d'impatto */
     max-width: 450px;
     height: auto;
     margin: 0 auto 2rem auto;
@@ -82,4 +87,27 @@ p {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border-left: 4px solid #ff5722; /* Richiamo del colore del titolo */
+}
+.buy-button {
+    display: inline-block;
+    background: #ff5722;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 1rem;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
 }
