@@ -42,7 +42,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 4px;
     text-align: center;
-    color: #ff0000;
+    color: #00db12; /* Un verde acceso per richiamare l'arte moderna e il surrealismo */
     margin-bottom: 2rem;
     position: relative;
 }
@@ -53,7 +53,7 @@ h1::after {
     display: block;
     width: 50px;
     height: 2px;
-    background-color: #ff5722; /* Un tocco di colore vivido (es. Surrealista) */
+    background-color: #000000; /* Un tocco di colore vivido (es. Surrealista) */
     margin: 10px auto 0 auto;
 }
 
@@ -79,19 +79,19 @@ img:hover {
 p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #555;
+    color: #f0e7e7;
     text-align: center;
     font-style: italic;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(73, 73, 73, 0.8);
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    border-left: 4px solid #ff5722; /* Richiamo del colore del titolo */
+    border-left: 4px solid #00db12; /* Richiamo del colore del titolo */
 }
 .buy-button {
     display: inline-block;
-    background: #ff5722;
-    color: #ffffff;
+    background: #00db12;
+    color: #000000;
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
