@@ -1,8 +1,6 @@
-/* ==========================================================================
-   STILE2.CSS - Layout Galleria d'Arte Moderno
-   ========================================================================== */
 
-/* Reset di base e font d'impatto */
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f7f9fa;
@@ -15,13 +13,13 @@ body {
     min-height: 100vh;
 }
 
-/* Container principale (la "cornice" della pagina) */
+
 body > * {
     max-width: 600px;
     width: 90%;
 }
 
-/* Struttura a scheda per contenere gli elementi */
+
 body {
     background: radial-gradient(
         ellipse at center,
@@ -31,51 +29,49 @@ body {
     );;
 }
 
-/* Per dare un aspetto da "card" elegante creiamo un contenitore virtuale.
-   Dato che l'HTML non ha un <div> contenitore, usiamo il body come flexbox 
-   e formattiamo direttamente gli elementi in modo armonioso. */
 
-/* Titolo Principale */
+
+
 h1 {
     font-size: 2.5rem;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 4px;
     text-align: center;
-    color: #00db12; /* Un verde acceso per richiamare l'arte moderna e il surrealismo */
+    color: #00db12; 
     margin-bottom: 2rem;
     position: relative;
 }
 
-/* Una piccola linea decorativa sotto il titolo per fare "design" */
+
 h1::after {
     content: '';
     display: block;
     width: 50px;
     height: 2px;
-    background-color: #000000; /* Un tocco di colore vivido (es. Surrealista) */
+    background-color: #000000; 
     margin: 10px auto 0 auto;
 }
 
-/* L'immagine (il quadro) */
+
 img {
     display: block;
-    width: 190% !important; /* Sovrascriviamo il width 30% inline per renderlo più visibile e d'impatto */
+    width: 190% !important; 
     max-width: 450px;
     height: auto;
     margin: 0 auto 2rem auto;
     border-radius: 8px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* Ombra morbida stile quadro appeso */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Effetto interattivo quando passi il mouse sull'immagine */
+
 img:hover {
     transform: scale(1.02);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
-/* Descrizione dell'opera */
+
 p {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -86,7 +82,7 @@ p {
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    border-left: 4px solid #00db12; /* Richiamo del colore del titolo */
+    border-left: 4px solid #00db12; 
 }
 .buy-button {
     display: inline-block;
