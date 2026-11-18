@@ -9,15 +9,6 @@
 }
 
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-color: #121212;
-    --text-main: #f0f0f0;
-    --text-muted: #a0a0a0;
-    --border-color: #2e2e2e;
-    --accent-color: #ffffff;
-  }
-}
 
 * {
   box-sizing: border-box;
@@ -40,11 +31,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ==========================================================================
-   INTESTAZIONE (TITOLO & SOTTOTITOLO)
-   ========================================================================== */
+
 .intestazione {
-  margin-top: auto; /* Aiuta a bilanciare la centratura verticale */
+  margin-top: auto; 
   margin-bottom: 3rem;
 }
 
@@ -64,11 +53,9 @@ body {
   letter-spacing: 0.08em;
 }
 
-/* ==========================================================================
-   MENU (PULSANTE / LINK DI ENTRATA)
-   ========================================================================== */
+
 .menu {
-  margin-bottom: auto; /* Completa la centratura verticale */
+  margin-bottom: auto; 
 }
 
 .menu .voce {
@@ -84,16 +71,8 @@ body {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.menu .voce:hover {
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
-  color: var(--bg-color);
-  transform: translateY(-2px);
-}
 
-/* ==========================================================================
-   FOOTER (PIEDE DI PAGINA)
-   ========================================================================== */
+
 .piede {
   color: var(--text-muted);
   font-size: 0.8rem;
